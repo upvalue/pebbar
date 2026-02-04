@@ -1,10 +1,10 @@
-# Pebble ntfy Bridge
+# pebbar
 
 Prototype app that lets [ntfy.sh](https://ntfy.sh) notifications drive UI on a
 Pebble smartwatch. An Android companion app intercepts ntfy broadcasts and
 forwards them to the watch over Bluetooth.
 
-Inspired by bitbar, xbar etc.
+Inspired by bitbar, xbar etc. Put arbitrary things on the watch without writing task-specific C/Java.
 
 See [AGENTS.md](AGENTS.md) for architecture details. Pebble dev docs:
 <https://developer.repebble.com/>
