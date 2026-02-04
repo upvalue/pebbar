@@ -1,0 +1,31 @@
+# Gradle
+.gradle/
+*.iml
+
+# Local properties (SDK path, etc)
+local.properties
+
+# Build outputs
+/build/
+app/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# IntelliJ IDEA
+/.idea/caches/
+/.idea/libraries/
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/.idea/deploymentTargetSelector.xml
+/.idea/other.xml
+
+# OS files
+.DS_Store
+
+# Signing keys (if added later)
+*.jks
+*.keystore
+signing.properties

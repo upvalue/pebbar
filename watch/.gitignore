@@ -1,0 +1,6 @@
+# Pebble build artifacts
+build/
+.lock-waf*
+
+# Node modules (if using npm for tooling)
+node_modules/

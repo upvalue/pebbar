@@ -1,2 +1,18 @@
+# Build artifacts
 build/
 .lock-waf_linux_build
+
+# Project-specific config
+.manse.json
+
+# Secrets and local config
+config/config.json
+*.secret
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+*~
+*.swp

@@ -1,13 +1,13 @@
 {
-  "name": "myfirstproject",
-  "author": "MakeAwesomeHappen",
+  "name": "pebbar",
+  "author": "upvalue.io",
   "version": "1.0.0",
   "keywords": ["pebble-app"],
   "private": true,
   "dependencies": {},
   "pebble": {
-    "displayName": "myfirstproject",
-    "uuid": "00000000-0000-0000-0000-000000000001",
+    "displayName": "pebbar",
+    "uuid": "069e7e9c-1944-4a3c-a6e8-27ef9f96a2ae",
     "sdkVersion": "3",
     "enableMultiJS": true,
     "targetPlatforms": [
@@ -18,10 +18,18 @@
       "emery"
     ],
     "watchapp": {
-      "watchface": false
+      "watchface": true
     },
     "messageKeys": [
-      "dummy"
+      "FACE_COUNT",
+      "ELEM_0_TYPE",
+      "ELEM_0_VALUE",
+      "ELEM_1_TYPE",
+      "ELEM_1_VALUE",
+      "ELEM_2_TYPE",
+      "ELEM_2_VALUE",
+      "ELEM_3_TYPE",
+      "ELEM_3_VALUE"
     ],
     "resources": {
       "media": []
