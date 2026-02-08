@@ -2,20 +2,20 @@
   "name": "pebbar",
   "author": "upvalue.io",
   "version": "1.0.0",
-  "keywords": ["pebble-app"],
+  "keywords": [
+    "pebble-app"
+  ],
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "sharp": "^0.34.5"
+  },
   "pebble": {
     "displayName": "pebbar",
     "uuid": "069e7e9c-1944-4a3c-a6e8-27ef9f96a2ae",
     "sdkVersion": "3",
     "enableMultiJS": true,
     "targetPlatforms": [
-      "aplite",
-      "basalt",
-      "chalk",
-      "diorite",
-      "emery"
+      "diorite"
     ],
     "watchapp": {
       "watchface": true
@@ -24,15 +24,50 @@
       "FACE_COUNT",
       "ELEM_0_TYPE",
       "ELEM_0_VALUE",
+      "ELEM_0_ICON",
       "ELEM_1_TYPE",
       "ELEM_1_VALUE",
+      "ELEM_1_ICON",
       "ELEM_2_TYPE",
       "ELEM_2_VALUE",
+      "ELEM_2_ICON",
       "ELEM_3_TYPE",
-      "ELEM_3_VALUE"
+      "ELEM_3_VALUE",
+      "ELEM_3_ICON"
     ],
     "resources": {
-      "media": []
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "ICON_BANANA",
+          "file": "images/banana.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_BELL",
+          "file": "images/bell.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_CLOCK",
+          "file": "images/clock.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_HAND",
+          "file": "images/hand.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_MOON_STAR",
+          "file": "images/moon-star.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_PIZZA",
+          "file": "images/pizza.png"
+        }
+      ]
     }
   }
 }

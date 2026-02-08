@@ -48,6 +48,6 @@ class NtfyReceiver : BroadcastReceiver() {
         PebbleKit.sendDataToPebble(context, MainActivity.PEBBLE_APP_UUID, dict)
 
         Log.d(TAG, "Sent to Pebble: ${elements.size} element(s)")
-        Toast.makeText(context, "ntfy→Pebble: ${elements.size} element(s)", Toast.LENGTH_SHORT).show()
+        // Toast.makeText(context, "ntfy→Pebble: ${elements.size} element(s)", Toast.LENGTH_SHORT).show()
     }
 }

@@ -11,10 +11,11 @@ object FaceJsonParser {
     private const val MAX_VALUE_LEN = 255
 
     private const val KEY_FACE_COUNT = 0
-    private fun keyElemType(i: Int) = 1 + i * 2
-    private fun keyElemValue(i: Int) = 2 + i * 2
+    private fun keyElemType(i: Int) = 1 + i * 3
+    private fun keyElemValue(i: Int) = 2 + i * 3
+    private fun keyElemIcon(i: Int) = 3 + i * 3
 
-    data class FaceElement(val type: Int, val value: String)
+    data class FaceElement(val type: Int, val value: String, val icon: String = "")
 
     sealed class ParseResult {
         data class Success(val elements: List<FaceElement>) : ParseResult()
@@ -63,7 +64,9 @@ object FaceJsonParser {
                 value
             }
 
-            elements.add(FaceElement(type = 0, value = truncated))
+            val icon = elem.optString("icon", "")
+
+            elements.add(FaceElement(type = 0, value = truncated, icon = icon))
         }
 
         return ParseResult.Success(elements)
@@ -76,6 +79,7 @@ object FaceJsonParser {
         for ((i, elem) in elements.withIndex()) {
             dict.addUint8(keyElemType(i), elem.type.toByte())
             dict.addString(keyElemValue(i), elem.value)
+            dict.addString(keyElemIcon(i), elem.icon)
         }
 
         return dict

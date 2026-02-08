@@ -1,2 +1,5 @@
+yeet:
+  pebble build && pebble install --cloudpebble
+
 build:
   pebble build
